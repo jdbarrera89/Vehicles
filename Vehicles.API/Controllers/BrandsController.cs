@@ -27,7 +27,7 @@ namespace Vehicles.API.Controllers
             return View();
         }
 
-        // POST: VehicleTypes/Create
+        // POST: Brands/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(Brand brand)
@@ -76,7 +76,7 @@ namespace Vehicles.API.Controllers
             return View(brand);
         }
 
-        // POST: VehicleTypes/Edit/5
+        // POST: Brands/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, Brand brand)
@@ -113,7 +113,7 @@ namespace Vehicles.API.Controllers
             return View(brand);
         }
 
-        // GET: VehicleTypes/Delete/5
+        // GET: Brands/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
