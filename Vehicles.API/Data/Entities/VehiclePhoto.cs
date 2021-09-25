@@ -13,10 +13,9 @@ namespace Vehicles.API.Data.Entities
         [Display(Name = "Foto")]
         public Guid ImageId { get; set; }
 
-        //TODO: Fix the images path
         [Display(Name = "Foto")]
         public string ImageFullPath => ImageId == Guid.Empty
             ? $"https://localhost:44326/images/noimage.png"
-            : $"https://vehiclessalazar.blob.core.windows.net/vehicles/{ImageId}";
+            : $"https://vehiclesdbarrera.blob.core.windows.net/vehicles/{ImageId}";
     }
 }
