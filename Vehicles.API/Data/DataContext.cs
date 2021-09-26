@@ -20,7 +20,7 @@ namespace Vehicles.API.Data
 
         public DbSet<Procedure> Procedures { get; set; }
 
-        public DbSet<Vehicle> Vehicle { get; set; }
+        public DbSet<Vehicle> Vehicles { get; set; }
 
         public DbSet<VehiclePhoto> VehiclePhotos { get; set; }
 
